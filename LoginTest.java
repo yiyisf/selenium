@@ -19,7 +19,7 @@ public class LoginTest {
 
 
     
-    WebDriver driver = null;
+    private WebDriver driver = null;
 
     @BeforeMethod
     private void setup(){

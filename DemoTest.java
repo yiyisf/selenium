@@ -15,7 +15,7 @@ import static java.lang.System.*;
  */
 public class DemoTest {
 
-    WebDriver driver = null;
+    private WebDriver driver = null;
 
     @BeforeMethod
     private void setup(){

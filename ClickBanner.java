@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
  * Created by liuzhe on 2019/2/17.
  */
 public class ClickBanner {
-    WebDriver driver = null;
+    private WebDriver driver = null;
 
     @BeforeMethod
     private void setup(){

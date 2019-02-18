@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
  */
 @Test
 public class SearchKeybord {
-    WebDriver driver = null;
+    private WebDriver driver = null;
 
     @BeforeMethod
     private  void setup(){
