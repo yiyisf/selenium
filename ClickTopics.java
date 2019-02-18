@@ -6,8 +6,8 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ClickBanner {
-    public WebDriver driver;
+public class ClickTopics {
+    private WebDriver driver;
 
     @BeforeMethod
     public void setup(){
@@ -16,15 +16,16 @@ public class ClickBanner {
         driver = new ChromeDriver();
     }
     @Test
-    public void test(){
+    public void test()throws InterruptedException {
         //在浏览器中键入网址
         driver.get("https://testerhome.com/");
-        //图片定位方式
-        By logoBy = By.cssSelector(".content img");
+        //帖子们的定位方式
+        By topics = By.className("media-heading");
         //定位图片
-        WebElement logoElement = driver.findElement(logoBy);
+        WebElement topicsElement = driver.findElement(topics);
         //点击图片
-        logoElement.click();
+        topicsElement.click();
+        Thread.sleep(5000);
         System.out.println("passed!");
     }
     @AfterMethod
