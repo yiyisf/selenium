@@ -24,8 +24,6 @@ public class SearchKeybord {
 
         //By search= driver.findElement();
 
-
-
     }
 
     @AfterMethod
