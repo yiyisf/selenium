@@ -1,5 +1,3 @@
-package com.haibao.selenium;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -11,7 +9,7 @@ import org.testng.annotations.Test;
  * Created by liuzhe on 2019/2/17.
  */
 public class ClickBanner {
-    private WebDriver driver = null;
+    WebDriver driver = null;
 
     @BeforeMethod
     private void setup(){

@@ -1,5 +1,4 @@
-package com.haibao.selenium;
-
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,7 +11,7 @@ import org.testng.annotations.Test;
  */
 @Test
 public class SearchKeybord {
-    private WebDriver driver = null;
+    WebDriver driver = null;
 
     @BeforeMethod
     private  void setup(){

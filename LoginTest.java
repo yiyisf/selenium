@@ -1,5 +1,3 @@
-package com.haibao.selenium;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +17,7 @@ public class LoginTest {
 
 
     
-    private WebDriver driver = null;
+    WebDriver driver = null;
 
     @BeforeMethod
     private void setup(){
